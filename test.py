@@ -6,7 +6,7 @@ cg = CoinGeckoAPI()
 
 price = cg.get_price(ids=['bitcoin', 'ethereum', 'prosper', 'frontier-token', 'pancakeswap-token', 'bdollar', 'bdollar-share'], vs_currencies='usd')
 
-bot = telebot.TeleBot("1577238504:AAHKc7bM48I--iPgU7igFM1rH_T2Ge9vhH0", parse_mode=None)
+bot = telebot.TeleBot(token, parse_mode=None)
 
 @bot.message_handler(commands=['check'])
 def send_welcome(message):
